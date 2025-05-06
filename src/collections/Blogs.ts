@@ -1,3 +1,4 @@
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import type { CollectionConfig } from 'payload'
 
 export const Blogs: CollectionConfig = {
@@ -7,14 +8,22 @@ export const Blogs: CollectionConfig = {
   },
   fields: [
     {
-      name: 'Whats on your mind!!!',
+      name: 'Textarea',
       type: 'textarea',
+    },
+    {
+      name: 'Richtext',
+      type: 'richText',
+      editor: lexicalEditor({}),
       required: true,
     },
     {
-      name: 'Whats the current data!!',
+      name: 'Date',
       type: 'date',
-      required: true,
+    },
+    {
+      name: 'Title',
+      type: 'text',
     },
   ],
   upload: true,

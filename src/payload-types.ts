@@ -157,8 +157,24 @@ export interface Media {
  */
 export interface Blog {
   id: string;
-  'Whats on your mind!!!': string;
-  'Whats the current data!!': string;
+  Textarea?: string | null;
+  Richtext: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  Date?: string | null;
+  Title?: string | null;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -270,8 +286,10 @@ export interface MediaSelect<T extends boolean = true> {
  * via the `definition` "blogs_select".
  */
 export interface BlogsSelect<T extends boolean = true> {
-  'Whats on your mind!!!'?: T;
-  'Whats the current data!!'?: T;
+  Textarea?: T;
+  Richtext?: T;
+  Date?: T;
+  Title?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;
