@@ -1,0 +1,205 @@
+/* Rich text styling to match the PayloadCMS editor */
+
+.richtext-content {
+  /* Base text styling */
+  font-family: inherit;
+  line-height: 1.6;
+  color: white;
+}
+
+/* Headings */
+.richtext-content h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.richtext-content h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: white;
+}
+
+.richtext-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: white;
+}
+
+.richtext-content h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.richtext-content h5 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.richtext-content h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+/* Paragraphs */
+.richtext-content p {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+}
+
+/* Links */
+.richtext-content a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.richtext-content a:hover {
+  color: #1d4ed8;
+}
+
+/* Lists */
+.richtext-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.richtext-content ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.richtext-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* Nested lists */
+.richtext-content ul ul,
+.richtext-content ol ol,
+.richtext-content ul ol,
+.richtext-content ol ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Blockquotes */
+.richtext-content blockquote {
+  border-left: 4px solid #e5e7eb;
+  padding-left: 1rem;
+  font-style: italic;
+  color: white;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1rem;
+}
+
+/* Code blocks */
+.richtext-content pre {
+  background-color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  font-family: monospace;
+}
+
+.richtext-content code {
+  font-family: monospace;
+  font-size: 0.9em;
+  background-color: #f3f4f6;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+/* Tables */
+.richtext-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.richtext-content th {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.richtext-content td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+/* Images */
+.richtext-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.375rem;
+  margin: 1rem 0;
+}
+
+/* Checkbox */
+.richtext-content input[type='checkbox'] {
+  margin-right: 0.5rem;
+}
+
+.richtext-content input[type='checkbox']:checked + label {
+  text-decoration: line-through;
+}
+
+/* Horizontal rule */
+.richtext-content hr {
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+  margin: 1.5rem 0;
+}
+
+/* Text alignment */
+.richtext-content .align-left {
+  text-align: left;
+}
+
+.richtext-content .align-center {
+  text-align: center;
+}
+
+.richtext-content .align-right {
+  text-align: right;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .richtext-content h1 {
+    font-size: 1.875rem;
+  }
+
+  .richtext-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .richtext-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .richtext-content p {
+    font-size: 1rem;
+  }
+}
