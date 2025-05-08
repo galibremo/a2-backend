@@ -173,6 +173,7 @@ export interface Blog {
     };
     [k: string]: unknown;
   };
+  statsBlock?: string | null;
   Date?: string | null;
   Title?: string | null;
   updatedAt: string;
@@ -288,6 +289,7 @@ export interface MediaSelect<T extends boolean = true> {
 export interface BlogsSelect<T extends boolean = true> {
   Textarea?: T;
   Richtext?: T;
+  statsBlock?: T;
   Date?: T;
   Title?: T;
   updatedAt?: T;

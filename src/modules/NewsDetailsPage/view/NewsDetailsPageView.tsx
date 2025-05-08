@@ -28,10 +28,11 @@ const NewsDetailsPageView = ({ slug }: { slug: string }) => {
     <div>
       <NewsHero />
       {data?.Richtext && (
-        <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="max-w-6xl mx-auto px-4 py-8">
           <div className="richtext-content">
             <RichText data={data.Richtext} />
           </div>
+          <div dangerouslySetInnerHTML={{ __html: data.statsBlock }} />
         </div>
       )}
     </div>

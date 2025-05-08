@@ -39,6 +39,7 @@
     "next": "15.3.0",
     "payload": "3.33.0",
     "postcss": "^8.5.3",
+    "prism-react-renderer": "^2.4.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-google-charts": "^5.2.1",

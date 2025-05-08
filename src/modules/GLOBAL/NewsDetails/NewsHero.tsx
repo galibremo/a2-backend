@@ -1,10 +1,10 @@
-import React from "react";
-import { ChevronLeft } from "lucide-react";
-import Link from "next/link";
+import React from 'react'
+import { ChevronLeft } from 'lucide-react'
+import Link from 'next/link'
 
 const NewsHero = () => {
   return (
-    <section className="max-w-7xl mx-auto h-screen flex flex-col justify-center py-24">
+    <section className="max-w-7xl mx-auto mt-40 flex flex-col justify-center py-24">
       <div className="flex flex-col">
         <div className="flex items-center gap-2">
           <ChevronLeft size={24} />
@@ -16,7 +16,7 @@ const NewsHero = () => {
           Adapting and Thriving in a<br /> Changing World
         </p>
         <div className="flex gap-2 mt-12.5">
-          <Link href={"/facebook"} className="border p-2.5">
+          <Link href={'/facebook'} className="border p-2.5">
             <svg
               width="18"
               height="19"
@@ -43,17 +43,12 @@ const NewsHero = () => {
                   <stop offset="1" stopColor="white" />
                 </linearGradient>
                 <clipPath id="clip0_3887_318">
-                  <rect
-                    width="18"
-                    height="18"
-                    fill="white"
-                    transform="translate(0 0.456055)"
-                  />
+                  <rect width="18" height="18" fill="white" transform="translate(0 0.456055)" />
                 </clipPath>
               </defs>
             </svg>
           </Link>
-          <Link href={"/x"} className="border p-2.5">
+          <Link href={'/x'} className="border p-2.5">
             <svg
               width="18"
               height="19"
@@ -80,7 +75,7 @@ const NewsHero = () => {
               </defs>
             </svg>
           </Link>
-          <Link href={"/linkedin"} className="border p-2.5">
+          <Link href={'/linkedin'} className="border p-2.5">
             <svg
               width="18"
               height="19"
@@ -107,12 +102,7 @@ const NewsHero = () => {
                   <stop offset="1" stopColor="white" />
                 </linearGradient>
                 <clipPath id="clip0_3887_324">
-                  <rect
-                    width="18"
-                    height="18"
-                    fill="white"
-                    transform="translate(0 0.456055)"
-                  />
+                  <rect width="18" height="18" fill="white" transform="translate(0 0.456055)" />
                 </clipPath>
               </defs>
             </svg>
@@ -120,7 +110,7 @@ const NewsHero = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default NewsHero;
+export default NewsHero

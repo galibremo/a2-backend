@@ -1,14 +1,13 @@
-import AboutUs from "@/modules/GLOBAL/Home/AboutUs";
-import CaseStudy from "@/modules/GLOBAL/Home/CaseStudy";
-import ClientsPartners from "@/modules/GLOBAL/Home/ClientsPartners";
-import GlobalFootprint from "@/modules/GLOBAL/Home/GlobalFootprint";
-import HeroSection from "@/modules/GLOBAL/Home/HeroSection";
-import Knowledge from "@/modules/GLOBAL/Home/Knowledge";
-import LatestNews from "@/modules/GLOBAL/Home/LatestNews";
-import MeetTeam from "@/modules/GLOBAL/Home/MeetTeam";
-import React from "react";
-import "../../css/outrun.css";
-import Grid3d from "@/modules/GLOBAL/Common/Grid3d";
+import AboutUs from '@/modules/GLOBAL/Home/AboutUs'
+import CaseStudy from '@/modules/GLOBAL/Home/CaseStudy'
+import ClientsPartners from '@/modules/GLOBAL/Home/ClientsPartners'
+import GlobalFootprint from '@/modules/GLOBAL/Home/GlobalFootprint'
+import HeroSection from '@/modules/GLOBAL/Home/HeroSection'
+import Knowledge from '@/modules/GLOBAL/Home/Knowledge'
+import LatestNews from '@/modules/GLOBAL/Home/LatestNews'
+import MeetTeam from '@/modules/GLOBAL/Home/MeetTeam'
+import React from 'react'
+import Grid3d from '@/modules/GLOBAL/Common/Grid3d'
 
 export default function HomePageView() {
   return (
@@ -23,5 +22,5 @@ export default function HomePageView() {
       <LatestNews />
       <Knowledge />
     </main>
-  );
+  )
 }
