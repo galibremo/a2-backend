@@ -30,3 +30,13 @@ export interface CaseStudyCardType {
   image: string
   description: string
 }
+
+export interface Card {
+  numberValue: string
+  content: string
+}
+
+// Define the props interface for the component
+export interface CardBlockProps {
+  cards: Card[]
+}
